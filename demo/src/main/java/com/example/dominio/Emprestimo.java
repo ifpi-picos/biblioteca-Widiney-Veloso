@@ -1,14 +1,14 @@
-package dominio;
+package com.example.dominio;
 
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
 
 public class Emprestimo {
-    private int idEmprestimo;
-    private Usuario usuario;
-    private Livro livro;
-    private LocalDate dataEmprestimo;
-    private LocalDate dataDevolucao;
+    private final int idEmprestimo;
+    private final Usuario usuario;
+    private final Livro livro;
+    private final LocalDate dataEmprestimo;
+    private final LocalDate dataDevolucao;
 
     public Emprestimo(int idEmprestimo, Usuario usuario, Livro livro){
         this.idEmprestimo = idEmprestimo;

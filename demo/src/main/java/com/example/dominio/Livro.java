@@ -1,16 +1,18 @@
-package dominio;
+package com.example.dominio;
 
 public class Livro {
-        private String titulo;
-        private String autor;
-        private String genero;
+        private final String titulo;
+        private final String autor;
+        private final String genero;
         private boolean isDisponivel;
+        private final int id;
     
-        public Livro(String titulo, String autor, String genero, boolean isDisponivel){
+        public Livro(String titulo, String autor, String genero, boolean isDisponivel, int id){
             this.titulo = titulo;
             this.autor = autor;
             this.genero = genero;
             this.isDisponivel = isDisponivel;
+            this.id = id;
         }
     
         public void setDisponivel(boolean disponivel){
@@ -31,6 +33,10 @@ public class Livro {
     
         public boolean isDisponivel(){
             return isDisponivel;
+        }
+
+        public int getId(){
+            return id;
         }
     
     }
